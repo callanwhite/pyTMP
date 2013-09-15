@@ -6,6 +6,7 @@ import datetime
 import time
 import tmp36
 import RPi.GPIO as GPIO
+import requests
 
 FEED_ID = #insert your feed id
 API_KEY = "INSERT YOUR KEY HERE"
