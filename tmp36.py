@@ -69,7 +69,7 @@ def bin2temp(adcout):
 	#adcout is the binary representation provided by the mcp3008 chip
 	#since we're using the 3.3v line, 0=0v and 1024=3.3v
 	#first convert the binary to its voltage equivalent
-	volts = (3.3/1023.0) * adcout
+	volts = (3.3/1024.0) * adcout
 	
 	#datasheet for tmp36 http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Sensors/Temp/TMP35_36_37.pdf
 	#describes a 0.5v offset in order to deal with negative values (operates from -40c to +125c)
