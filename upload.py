@@ -45,8 +45,9 @@ def run(datastream):
 		time.sleep(0.5)
 		GPIO.output(LED,False)
 	except requests.exceptions.HTTPError as e:
-		print "HTTPError({}): {1}".format(e.errno, e.strerror)
-		
+		print str(e)
+	except requests.exceptions.ConnectionError as e:
+		print str(e)
 	time.sleep(5)
 
 try:
